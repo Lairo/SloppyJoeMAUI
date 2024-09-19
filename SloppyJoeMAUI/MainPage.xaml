@@ -14,15 +14,40 @@
                 <RowDefinition />
                 <RowDefinition />
                 <RowDefinition />
-                <RowDefinition />
             </Grid.RowDefinitions>
+            
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="5*" />
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
+            
             <Label x:Name="item1" FontSize="18" Text="item #1" />
             <Label x:Name="price1" FontSize="18" HorizontalOptions="End" Text="price # 1"
                     Grid.Column="1"/>
+
+            <Label x:Name="item2" FontSize="18" Grid.Row="1" Text="item #2" />
+            <Label x:Name="price2" FontSize="18" HorizontalOptions="End" Text="price # 2"
+                    Grid.Row="1"  Grid.Column="1"/>
+
+            <Label x:Name="item3" FontSize="18" Grid.Row="2" Text="item #3" />
+            <Label x:Name="price3" FontSize="18" HorizontalOptions="End" Text="price # 3"
+                    Grid.Row="2" Grid.Column="1"/>
+
+            <Label x:Name="item4" FontSize="18" Grid.Row="3" Text="item #4" />
+            <Label x:Name="price4" FontSize="18" HorizontalOptions="End" Text="price # 4"
+                    Grid.Row="3" Grid.Column="1"/>
+
+            <Label x:Name="item5" FontSize="18" Grid.Row="4" Text="item #5" />
+            <Label x:Name="price5" FontSize="18" HorizontalOptions="End" Text="price # 5"
+                     Grid.Row="4" Grid.Column="1"/>
+
+            <Label x:Name="item6" FontSize="18" Grid.Row="5" Text="item #6" />
+            <Label x:Name="price6" FontSize="18" HorizontalOptions="End" Text="price # 6"
+                     Grid.Row="5" Grid.Column="1"/>
+
+            <Label x:Name="guacamole" FontSize="18" FontAttributes="Italic" Text="guacamole"
+                Grid.Row="6" Grid.ColumnSpan="2" HorizontalOptions="End" VerticalOptions="End" />
+            
 
         </Grid>
     </ScrollView>
