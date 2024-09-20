@@ -1,25 +1,42 @@
-﻿namespace SloppyJoeMAUI
+﻿
+namespace SloppyJoeMAUI
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-
+        
         public MainPage()
         {
             InitializeComponent();
+            MakeTheMenu();
         }
+        private void MakeTheMenu()
+        {
+            MenuItem[] menuItems = new MenuItem[6];
 
-        //private void OnCounterClicked(object sender, EventArgs e)
-        //{
-        //    count++;
+            for(int i = 0; i < 6; i++)
+            {
+                menuItems[i] = new MenuItem();
+                menuItems[i].Generate();
+            }
 
-        //    if (count == 1)
-        //        CounterBtn.Text = $"Clicked {count} time";
-        //    else
-        //        CounterBtn.Text = $"Clicked {count} times";
+            price1.Text = menuItems[0].Price;
+            item1.Text = menuItems[0].Description;
+            price2.Text = menuItems[1].Price;
+            item2.Text = menuItems[1].Description;
+            price3.Text = menuItems[2].Price;
+            item3.Text = menuItems[2].Description;
+            price4.Text = menuItems[3].Price;
+            item4.Text = menuItems[3].Description;
+            price5.Text = menuItems[4].Price;
+            item5.Text = menuItems[4].Description;
+            price6.Text = menuItems[5].Price;
+            item6.Text = menuItems[5].Description;
 
-        //    SemanticScreenReader.Announce(CounterBtn.Text);
-        //}
+            MenuItem guacamoleMenuItem = new();
+            guacamoleMenuItem.Generate();
+            guacamole.Text = $"Add guacamole for {guacamoleMenuItem.Price}";
+
+        }
     }
 
 }
